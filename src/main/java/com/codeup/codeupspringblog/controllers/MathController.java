@@ -10,11 +10,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class MathController {
 
-    @GetMapping("/add")
-    @ResponseBody
-    public String add() {
-        return "LETS ADD!";
-    }
     @GetMapping( "/add/{num1}/and/{num2}")
     @ResponseBody
     public String addition(@PathVariable int num1 , @PathVariable int num2){
