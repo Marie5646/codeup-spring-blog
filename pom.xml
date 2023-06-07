@@ -6,13 +6,13 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.1.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
     <groupId>com.codeup</groupId>
-    <artifactId>kotlin-spring-blog</artifactId>
+    <artifactId>codeup-spring-blog</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>kotlin-spring-blog</name>
-    <description>kotlin-spring-blog</description>
+    <name>codeup-spring-blog</name>
+    <description>codeup-spring-blog</description>
     <properties>
         <java.version>17</java.version>
     </properties>
