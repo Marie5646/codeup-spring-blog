@@ -31,4 +31,12 @@ public class User {
         this.password = password;
         this.email = email;
     }
+
+    public User(User copy) {
+        this.id= copy.id;
+        this.username = copy.username;
+        this.email = copy.email;
+        this.password = copy.password;
+
+    }
 }

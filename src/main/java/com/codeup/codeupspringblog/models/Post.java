@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
+
 @Getter
 @Setter
 @AllArgsConstructor
@@ -23,6 +26,14 @@ public class Post {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+
+//    @ManyToMany(cascade = CascadeType.ALL)
+//    @JoinTable(name = "post_categories",
+//    joinColumns = {@JoinColumn(name = "post_id")},
+//            inverseJoinColumns = {@JoinColumn(name = "category_id")}
+//    )
+//     private List<PostCategories> categories;
+
 
     public Post(String title,String body) {
         this.title = title;
